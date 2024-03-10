@@ -6,6 +6,16 @@ header {
 
 }
 
+h1 {
+    float: left;
+    padding: 15px;
+}
+
+nav {
+    float: right;
+    padding: 15px;
+}
+
 .container {
     min-height: 100vh;
 }
