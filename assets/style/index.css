@@ -1,2 +1,12 @@
 @import url("./reset.css");
 
+header {
+    position: relative;
+    background-color: #00eaff;
+
+}
+
+.container {
+    min-height: 100vh;
+}
+
