@@ -4,5 +4,5 @@ In this website, I have created my portfolio through which you can email me or c
 
 ## Demo
 
-Click [here](https://dupanshu.github.io/my-portfolio/) to text the application.
+Click [here](https://dupanshu.github.io/my-portfolio/) to go to my website.
 
