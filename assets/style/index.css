@@ -8,6 +8,8 @@ main {
     background: url('../images/photo-1620641788421-7a1c342ea42e.avif')center center / cover no-repeat fixed;
 }
 
+/* ----header----*/
+
 header {
     position: relative;
     top: 0;
@@ -58,10 +60,16 @@ nav ul li a:hover {
     color: #9a9aff;
 }
 
+/* ---------
+-----home----
+-------------*/
 .home {
     min-height: 100vh;
 }
 
+/* ---------
+-----about me----
+-------------*/
 .about {
     min-height: 100vh;
     align-items: center;
@@ -69,6 +77,7 @@ nav ul li a:hover {
 }
 
 .about h1 {
+    margin-top: 20px;
     position: relative;
     font-size: 35px;
     font-weight: 600;
@@ -80,34 +89,45 @@ nav ul li a:hover {
     position: relative;
     font-size: 30px;
     font-family:monospace;
+    font-style: italic;
     color: #031721;
 }
 
-.about div {
-    display: inline;
-
+.box-1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .photo {
-    float:right;
+    padding: 20px;
+    background-color: #031721;
 }
 
 .photo img {
-    border: 1px solid black;
+    border: 2px solid #fff;
     border-radius: 10px;
     padding: 5px;
-    height: 300px;
+    height: 350px;
 }
 
 .aboutme {
-    float: left;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: #000;
+    color: #fff;
 }
 
 .touch {
-    text-align: center;
     font-size: 20px;
     margin-top: 20px;
     animation: bounce 1.5s ease-in-out infinite;
+    margin-top: 50px;
 }
 
 @keyframes bounce {
@@ -115,6 +135,9 @@ nav ul li a:hover {
     25%, 75% {transform: translateY(-15px) ;}
 }
 
+/* ---------
+-----contact me----
+-------------*/
 .contact {
     display: flex;
     justify-content: space-between;
