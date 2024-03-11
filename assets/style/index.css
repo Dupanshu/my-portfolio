@@ -1,9 +1,11 @@
 @import url("./reset.css");
 
 main {
-    background-color: #693b69;
+    position: relative;
+    background-color: #70b8db;
     min-height: 100dvh;
     overflow: hidden;
+    background: url('../images/photo-1620641788421-7a1c342ea42e.avif')center center / cover no-repeat fixed;
 }
 
 header {
@@ -12,7 +14,7 @@ header {
     left: 0;
     min-width: 100%;
     height: 70px;
-    background-color: #511f52;
+    background-color: #339acb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +24,7 @@ header {
     min-width: 100%;
 }
 
-h1 {
+header h1 {
     padding: 10px;
     text-align: center;
     margin-left: 10px;
@@ -56,21 +58,69 @@ nav ul li a:hover {
     color: #9a9aff;
 }
 
-
 .home {
     min-height: 100vh;
 }
 
 .about {
     min-height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+.about h1 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    font-family:monospace;
+    color:#4545df;
+}
+
+.about h2 {
+    position: relative;
+    font-size: 30px;
+    font-family:monospace;
+    color: #031721;
+}
+
+.about div {
+    display: inline;
+
+}
+
+.photo {
+    float:right;
+}
+
+.photo img {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    height: 300px;
+}
+
+.aboutme {
+    float: left;
+}
+
+.touch {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% { translate: 0 0;}
+    25%, 75% {transform: translateY(-15px) ;}
 }
 
 .contact {
     display: flex;
     justify-content: space-between;
     align-items: center;   background-color: #000;
+    text-align: center;
 }
-
 
 .box {
     position: relative;
@@ -84,10 +134,15 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.box .icon a {
+    color: #fff;
+    font-size: 25px;
+}
+
 .icon i {
     margin-left: 20px;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
 }
 
 footer {
